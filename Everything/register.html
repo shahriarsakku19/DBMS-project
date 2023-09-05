@@ -1,0 +1,238 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Oxygen:wght@300;400;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+   
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-left: 100px;
+      margin-right: 50px;
+      font-size: large;
+    }
+    input[type="text"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      margin-right: 0px;
+
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #007c04;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 10vh;
+        transition: 0.5s;
+    }
+    input[type="submit"]:hover {
+      background-color: #ffc118;
+      border-style: solid;
+      border-color: #ffffff;
+      border-width: 2px;
+      color: black;
+    }
+    .form{
+       
+
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+    }
+    form
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    
+  </style>
+    
+
+	  <title>Create Account</title>
+    
+  </head>
+
+  <body style="
+     background: #F17153;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#F17153, #F58D63, #f1ab53);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#F17153, #F58D63, #f1ab53);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#F17153, #F58D63, #f1ab53);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#F17153, #F58D63, #f1ab53);
+    /* Standard syntax */">
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-4 sidebar1">
+            <div >
+                <a class="logo">
+                    <img class="logo1" src="logo.jpg">
+
+                </a>
+            </div>
+            <a class="nav" href="dashboard.html">
+                Dashboard
+            </a>
+                
+            </div>
+          
+            <div class="col-md-10" style="display: flex; flex-direction: column;">
+               <div class="container">
+      <h2 style="font-size: 50px; margin-bottom:10vh;">Account Application Form</h2>
+      <form action="register.php" method="post">
+        <div class="form">
+            <label for="accountName">Account Name:</label>
+        <input type="text" id="accountName" name="accountName" required />
+
+        <label for="accountNumber">Account Number:</label>
+        <input type="text" id="accountNumber" name="accountNumber" required />
+
+        <label for="branchCode">Branch Code:</label>
+        <input type="text" id="branchCode" name="branchCode" required />
+
+        <label for="cifNumber">CIF Number:</label>
+        <input type="text" id="cifNumber" name="cifNumber" required />
+
+        <label for="accountTitle">Title:</label>
+        <select id="accountTitle" name="accountTitle">
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Ms">Ms</option>
+          <option value="Others">Others</option>
+        </select>
+
+        <label for="applicantName">Applicant's Name:</label>
+        <input type="text" id="applicantName" name="applicantName" required />
+
+        <label for="fatherName">Father's Name:</label>
+        <input type="text" id="fatherName" name="fatherName" required />
+
+        <label for="motherName">Mother's Name:</label>
+        <input type="text" id="motherName" name="motherName" required />
+
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required />
+
+        <label for="spouseName">Spouse Name:</label>
+        <input type="text" id="spouseName" name="spouseName" />
+
+        <label for="professionalStatus">Professional Status:</label>
+        <input
+          type="text"
+          id="professionalStatus"
+          name="professionalStatus"
+          required
+        />
+
+        <label for="nationalID">National ID Number:</label>
+        <input type="text" id="nationalID" name="nationalID" required />
+
+        <label for="passportNumber">Passport Number:</label>
+        <input type="text" id="passportNumber" name="passportNumber" />
+
+        <label for="presentAddress">Present Address:</label>
+        <input type="text" id="presentAddress" name="presentAddress" required />
+
+        <label for="permanentAddress">Permanent Address:</label>
+        <input
+          type="text"
+          id="permanentAddress"
+          name="permanentAddress"
+          required
+        />
+
+        <label for="mailingAddress">Mailing Address:</label>
+        <input type="text" id="mailingAddress" name="mailingAddress" />
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="text" id="mobileNumber" name="mobileNumber" required />
+
+        <label for="residentPhone">Resident Phone Number:</label>
+        <input type="text" id="residentPhone" name="residentPhone" />
+
+        
+
+        </div>
+        <input type="submit" value="Submit" />
+
+        <div id="small-container" style="display: none;">
+          <div id="message-dialog">
+              <p id="message-text"></p><br>
+              <a id="close-message" href="register.html" >Close</a>
+          </div>
+      </div>
+
+      </form>
+    </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("form").submit(function(event) {
+            event.preventDefault();
+
+            // Serialize the form data
+            var formData = $(this).serialize();
+
+            // Send an AJAX request to the PHP script
+            $.ajax({
+                type: "POST",
+                url: "register.php", // Update the path to your PHP script
+                data: formData,
+                dataType: "json",
+                success: function(response) {
+                    if (response.success) {
+                        // Registration was successful, show the message
+                        $("#message-text").text(response.message);
+                        $("#small-container").show();
+                    } else {
+                        // Registration failed, show an error message
+                        alert(response.message);
+                    }
+                },
+                error: function() {
+                    alert("An error occurred while processing your request.");
+                }
+            });
+        });
+
+        // Close the message dialog when the "Close" button is clicked
+        $("#close-message").click(function() {
+            $("#message-container").hide();
+        });
+    });
+    </script>
+
+  </body>
+  <script src="bootstrap.min.js"></script>
+
+</html>
